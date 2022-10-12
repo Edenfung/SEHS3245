@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BWS</title>
+        <style>
+            * {
+                font-family: Arial, Helvetica, sans-serif;
+                color:brown;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: skyblue
+            }
+
+            header {
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            button {
+                padding: 10px;
+                margin: 10px;
+                height: 3rem;
+                width: 5rem;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: medium;
+                font-weight:bold
+            }
+
+            table {
+                background-color: beige;
+            }
+
+            th, td {
+                padding: 15px;
+                text-align: left;
+            }
+
+            #questions {
+                display: flex;
+                margin-bottom: 8%;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div style="margin-left: 3%;">
+                <h1 style="font-size: 5rem;">BWS</h1>
+                <h1 style="font-size: 1.5rem;">Best Web Services</h1>
+            </div>
+            <button style="margin-top: 4%; margin-right: 5%;"><a href="bws.html">Back</a></button>
+        </header>
+        <!-- Form -->
+        <form id="questions" action="form_action.php" method="post">
+            <table border="1">
+                <tr>
+                    <th>Employee Number</th>
+                    <!-- Text input -->
+                    <th><input type="text" name="employeeNumber"></th>
+                </tr>
+                <tr>
+                    <th>Employee Name</th>
+                    <!-- Text input with scroll bar -->
+                    <th><textarea rows="2" cols="19" style="overflow-y:scroll; resize: none;" name="employeeeName"></textarea></th>
+                </tr>
+                <tr>
+                    <th>Job Title</th>
+                    <!-- Select -->
+                    <th>
+                        <select name="jobTitle">
+                            <option value="president">PRESIDENT</option>
+                            <option value="manager">MANAGER</option>
+                            <option value="salesman">SALESMAN</option>
+                            <option value="analyst">ANALYST</option>
+                            <option value="clerk">CLERK</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Employee Supervisor's Number</th>
+                    <!-- Text input -->
+                    <th><input type="text" name="supervisorsNumber"></th>
+                </tr>
+                <tr>
+                    <th>Date of Starting Work</th>
+                    <!-- Date input -->
+                    <th><input type="date" name="startingDate"></th>
+                </tr>
+                <tr>
+                    <th>Employee Salary</th>
+                    <!-- Range from the minimum hk10,000 to maximum hk90,000 and a set value to hk50,000 -->
+                    <th><input type="range" name="salary" max="90000" min="10000" value="50000"></th>
+                </tr>
+                <tr>
+                    <th>Employee Commission</th>
+                    <!-- Protected text input. When letters are typed, stars are displayed -->
+                    <th><input type="password"></th>
+                </tr>
+                <tr>
+                    <!-- Radio buttons for the choice of 10, 20, 30 and 40 -->
+                    <th colspan="2">
+                        Department Number
+                        <table>
+                            <tr>
+                                <th></th>
+                                <th>Number</th>
+                                <th>Department</th>
+                                <th>Location</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="departmentNumber" value="10_accounting_NY" checked></td>
+                                <td>10</td>
+                                <td>ACCOUNTING</td>
+                                <td>New York</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="departmentNumber" value="20_research_Dallas"></td>
+                                <td>20</td>
+                                <td>RESEARCH</td>
+                                <td>Dallas</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="departmentNumber" value="30_sales_Chicago"></td>
+                                <td>30</td>
+                                <td>SALES</td>
+                                <td>Chicago</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="departmentNumber" value="40_operations_Boston"></td>
+                                <td>40</td>
+                                <td>OPERATIONS</td>
+                                <td>Boston</td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+            </table>
+            <!-- Hidden field -->
+            <input type="hidden", name="BWS" value="Best Web Services">
+            <div style="display: flex;">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </body>
+</html>

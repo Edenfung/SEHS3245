@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BWS</title>
+        <style>
+            * {
+                font-family: Arial, Helvetica, sans-serif;
+                color:brown;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: skyblue;
+                font-size: large;
+            }
+
+            header {
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            button {
+                padding: 10px;
+                margin: 10px;
+                height: 3rem;
+                width: 5rem;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: medium;
+                font-weight:bold
+            }
+
+            hr {
+                margin: 5%;
+            }
+
+            th, td {
+                padding: 15px;
+                text-align: left;
+            }
+
+            #questions {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .container {
+                background-color:beige;
+                margin: 0 auto 10%;
+                padding: 5%;
+                border-radius: 1%;
+                width: 60rem;
+                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            }
+
+            .typeOfServeices {
+                display: flex;
+            }
+
+            .types {
+                width: 20rem;
+            }
+
+           
+        </style>
+    </head>
+    <body>
+        <header>
+            <div style="margin-left: 3%;">
+                <h1 style="font-size: 5rem;">BWS</h1>
+                <h1 style="font-size: 1.5rem;">Best Web Services</h1>
+            </div>
+            <button style="margin-top: 4%; margin-right: 5%;"><a href="form.html">Form</a></button>
+        </header>
+        <div class="container">
+            <div>
+                <div style="margin-bottom:5%;">
+                    <img src="image/planet-earth.png" width="250" height="250" style="position: relative; left: 30%; z-index: 1;">
+                    <img src="image/cloud.png" width="200" style="position: relative; top:50px; left: 10%; opacity: 95%; z-index: 2;">
+                    <img src="image/server.png" width="80" style="position: relative; top:10px; left: -3%; z-index: 4;"> 
+                    <img src="image/server.png" width="80" style="position: relative; left: -10%; z-index: 3;">
+                </div>
+                <!-- Introduction -->
+                <p>
+                    <strong>Best Web Services</strong> specializes in providing best suited cloud computing services to our individual 
+                    and corporate client. Being one of the elites in our company, you are encouraged to equip yourself 
+                    with cloud computing knowledge.
+                </p>
+                <br>
+                <p>
+                    Cloud computing enable the delivery of on-demand computing services over the internet. 
+                    People can access servers, storage, database, and a broad set of IT resources. 
+                    With clouding computing, growing the business will be much easier.
+                </p>
+                <hr>
+                <div>
+                    <img src="image/oldMachine.jpg" style="float: right; width: 19%; margin-left: 2%; border-radius: 5%;">
+                    <!-- Difference between traditional computing with cloud computing -->
+                    <p>
+                        In traditional grid of computing, we need to install, maintain, 
+                        or even build our own hardware and software. For example, companies 
+                        build their own data centers or infrastructures to house and manage their data system. 
+                        Individual purchase various kinds of physical storage to store data. 
+                        We are racked by the limitation of space and burden of cost in traditional computing.
+                    </p>
+                    <br>
+                    <p>
+                        In cloud computing, our client can enjoy the latest technology from the internet. 
+                        They can build their server, access database, and have a well-designed data infrastructure 
+                        on the cloud, and we are responsible for the security and maintenance of their apps, 
+                        data and infrastructure. Therefore, they focus on innovation of their product and put their 
+                        best effort to grow their business.
+                    </p>
+                </div>
+                <br>
+                <hr>
+                <!-- Benefit of cloud computing -->
+                <h2>Benefit of Cloud Computing</h2>
+                <br>
+                <div>
+                    <img src="image/budget.png" width="90" height="90" style="float: right; margin-left: 3%;">
+                    <h3>Cost Saving</h3>
+                    <p>        
+                        Cloud computing eliminates the expenses on building, installing or maintaining hardware and software. 
+                        Instead of spending on expensive hardware and spaces for building your data center, setting your 
+                        datacentre on cloud will save your operational cost but still have the cutting edge 
+                        IT resources.
+                    </p>
+                </div>
+                <br>
+                <div>
+                    <img src="image/global-network.png" width="90" height="90" style="float: left; margin-right: 3%;">
+                    <h3>Scalability</h3>
+                    <p>                
+                        As a provider of Cloud computing, we have distributed hundreds of data centres all over the world. 
+                        With cloud computing, you are able to grow your business without beyond the boundary of time and space.
+                        With just a few click, you can deploy your products or applications globally in minutes 
+                        and enhance the customer experience of your product by reducing latency.
+                    </p>
+                </div>
+                <br>
+                <div>
+                    <img src="image/security.png" width="110" height="110" style="float: right; margin-left: 3%;">
+                    <h3>Security</h3>
+                    <p>
+                        Protecting of your computer system and network against cyber-attacks is crucial to your business.
+                        Cloud providers implement a set of policy and strict control to ensure 
+                        the security of your data, application and infrastructure with advanced technology.
+                        Securing your IT asset requires constant monitoring which demands a load of resources. 
+                        However, with our cloud computing service, the security of the system will be managed by us and we 
+                        have robust measures and disaster recovery system for the cyber security of your applications.
+                    </p>
+                </div>
+                <br>
+                <div>
+                    <img src="image/provision.png" width="90" height="90" style="float: left; margin-right: 3%;">
+                    <h3>Flexibility</h3>
+                    <p>
+                        Lots of industries are suffered by seasonal factors.
+                        Companies need to pay for operating cost even though the demand of their products is decreaing.
+                        Cloud computing uses a “pay-as-you-go” model. You only pay for what you actually use, 
+                        which is a flexible and cost-efficient approach for unpredictable demand. 
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h1>Type of cloud services</h1>
+                <br>
+                <p>
+                    There are three main types of cloud computing which are built on top of one another and called computing “stack”.
+                    They provide various levels of flexibility and control for the management of the cloud computing system.
+                </p>
+                <br>
+                <div class="typeOfServeices">
+                    <div class="types">
+                        <h3><i><u>Infrastructure as a Service</u></i></h3>
+                        <p>
+                            <strong>IaaS</strong> provides infrastructure as service. Clients can access to lowest layers of the computer system.
+                            A well-designed infrastructure will be set for our clients through the internet. 
+                            Users just need to handle the application, data, runtime, middleware and operating system, while we take care the rest.
+                        </p>
+                        <br>
+                        <h3><i><u>Platform as a Service</u></i></h3>
+                        <p>
+                            <stong>PssA</stong> provide platform or runtime environment for application development. 
+                            It eliminates the need of users to manage or maintain the underneath architecture. 
+                            They could put forth their greatest effort to manage their applications and data.
+                        </p>
+                        <br>
+                        <h3><i><u>Software as a Service</u></i></h3>
+                        <p>
+                            <stong>SaaS</stong> will provide a product or software to the users. The on-demand software allows users to interact on cloud-based apps.
+                            For example, Gmail is one of the famous SaaS mail provider. SaaS has been widely utilized in Marketing, Customer Relationship Management, eCommerce, etc.
+                            It provides solutions and convenient services for different business models.
+                        </p>
+                    </div>
+                    <img src="image/stack.png" width="544" height="669" style="margin-right: -5%;">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
